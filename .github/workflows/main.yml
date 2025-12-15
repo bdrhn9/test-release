@@ -25,7 +25,6 @@ jobs:
   tag-and-release:
     name: Tag and release
     runs-on: ubuntu-latest
-    needs: required-checks-passed
     # Only tag and release on pushes to main
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     strategy:
