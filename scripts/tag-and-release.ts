@@ -1,10 +1,10 @@
 import { join } from "node:path";
 
-import { tagAndRelease } from "@api3/commons";
+import { tagAndRelease } from "../src/index";
 
 const main = async () => {
   const packageJsonPath = join(__dirname, "../package.json");
-  await tagAndRelease("test-release", packageJsonPath);
+  await tagAndRelease("api3dao", "test-release", packageJsonPath);
 };
 
 main()
