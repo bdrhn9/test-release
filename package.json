@@ -1,0 +1,30 @@
+{
+  "name": "test-release",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=18.20.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/api3dao/test-release"
+  },
+  "scripts": {
+    "create-release:npm": "ts-node scripts/create-npm-release.ts",
+    "release:tag": "ts-node scripts/tag-and-release.ts",
+    "prettier:check": "prettier --check \"./**/*.{js,ts,md,json}\"",
+    "prettier:fix": "prettier --write \"./**/*.{js,ts,md,json}\""
+  },
+  "keywords": [],
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@api3/commons": "1.0.1",
+    "@types/node": "^24.10.1",
+    "is-wsl": "^2.2.0",
+    "prettier": "^3.7.4",
+    "rimraf": "^6.1.2",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@9.15.9"
+}
