@@ -4,7 +4,7 @@ import { tagAndRelease } from "../src/index";
 
 const main = async () => {
   const packageJsonPath = join(__dirname, "../package.json");
-  await tagAndRelease("api3dao", "test-release", packageJsonPath);
+  await tagAndRelease("bdrhn9", "test-release", packageJsonPath);
 };
 
 main()
